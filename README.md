@@ -7,7 +7,7 @@
 ## Goal
 ---
 <img src="./img/1.png" Width="320" Height="240"/>
-<img src="./img/2.png" Width="320" Height="240"/>  
+<img src="./img/2.png" Width="320" Height="240"/>
 
 거리센서 정보를 사용할 수 있는 시뮬레이터에서 강화학습 DQN 기반으로 학습을 시켜서 자동차와 벽과 충돌하지 않고 죽지 않고 살아남도록 만들기
 
@@ -47,7 +47,7 @@ Project3
 ## Procedure
 ---
 ### 학습하기
-1. How to use
+#### 1. How to use
 - action으로 학습하기
 ~~~
 $ cd src
@@ -59,7 +59,7 @@ $ cd src
 $ python main_vector.py
 ~~~  
 
-2. main (main_action.py, main_vector.py)
+#### 2. main (main_action.py, main_vector.py)
 - hyper_param  
   - sensor_num
     - 학습 시 라이다 센서를 몇 개 볼 것인지 개수 입력  
@@ -95,7 +95,7 @@ $ python main_vector.py
   - 일정한 확률로 랜덤으로 모험할 비율을 선택하는 것 (일정한 확률은 Random, 일정한 확률은 이전 최상의 결과를 냈던 행동 선택)
 
 ### REWARD
-1. action (my_reward_action.py)
+#### 1. action (my_reward_action.py)
 - reward 설정을 action으로 설정
   - action 0: 좌회전
   - action 1: 직진
@@ -105,7 +105,7 @@ $ python main_vector.py
   - action 5: 오른쪽으로 후진
   - action 6: 정지
 
-2. vector (my_reward_vector.py)
+#### 2. vector (my_reward_vector.py)
 - 라이다 센서에서 가져온 550개의 값을 360도에 맞게 변환
 - 라이다 값의 뒷편은 차량으로 가리기 때문에 0~180 값만 사용
 - 라이다가 측정할 수 있는 거리는 최대 값(inf로 리턴)이 존재하기 때문에 좌우 거리 값을 비교하여 가장 작은 값을 inf 값 대신 넣기
@@ -115,11 +115,11 @@ $ python main_vector.py
 - 라이다 값으로 계산된 방향은 arcsin(x 성분 평균 / 평균 벡터 거리)
 
 ### 시험 주행
-1. How to use
+#### 1. How to use
 ~~~
 $ python viewer.py
 ~~~ 
-2. viewer.py  
+#### 2. viewer.py  
 - Line 9: hidden_layer = [..., ...]
   - 학습시에 사용한 main.py >> hidden_size 파라미터와 똑같이 입력함  
 - Line 10: lidar_cnt = ...
@@ -138,19 +138,19 @@ $ python viewer.py
 
 ## Try
 ---
-1. hyper parameter 조정
+#### 1. hyper parameter 조정
 - 
 - 
 - 
-2. Network 변경
-- 
-- 
-- 
-3. epsilon 조정
-- 
-- 
-- 
-4. reward 변경
+#### 2. Network 변경
+- DQN보다 DDQN이나 Duel DQN을 사용했을 때, 더 성능이 올라감 
+- DDQN이나 Duel DQN에서는 큰 성능 차이를 발견하지 못함  
+
+#### 3. epsilon 조정
+- episode 증가할 때마다 조금씩 감소
+- 고정값 사용
+
+#### 4. reward 변경
 - 
 - 
 - 
@@ -158,6 +158,7 @@ $ python viewer.py
 ## Limitations
 ---
 - xytron에서 제공된 틀을 받아서 시뮬레이션을 진행했기 때문에, 학습 네트워크에 사용한 network를 직접 구현하지 못함.
+- DQN, DDQN, Duel DQN 외의 다른 강화학습 네트워크를 사용해보지 못함
 
 ## What I've learned
 ---
