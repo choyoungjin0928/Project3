@@ -6,8 +6,7 @@
 
 ## Goal
 ---
-<img src="./img/1.png" Width="320" Height="240"/>
-<img src="./img/2.png" Width="320" Height="240"/>
+<img src="./img/1.png" Width="320" Height="240"/> <img src="./img/2.png" Width="320" Height="240"/>
 거리센서 정보를 사용할 수 있는 시뮬레이터에서 강화학습 DQN 기반으로 학습을 시켜서 자동차와 벽과 충돌하지 않고 죽지 않고 살아남도록 만들기
 
 ## Environment
