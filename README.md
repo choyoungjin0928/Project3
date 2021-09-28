@@ -2,7 +2,8 @@
 
 ## Video
 ---
-
+[![주행영상1](https://img.youtube.com/vi/WEgGND4ox7k/0.jpg)](https://youtu.be/WEgGND4ox7k)
+[![주행영상2](https://img.youtube.com/vi/R3V_jT_HOXc/0.jpg)](https://youtu.be/R3V_jT_HOXc) 
 
 ## Goal
 ---
