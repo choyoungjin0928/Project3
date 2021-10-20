@@ -5,6 +5,15 @@
 [![주행영상1](https://img.youtube.com/vi/WEgGND4ox7k/0.jpg)](https://youtu.be/WEgGND4ox7k)
 [![주행영상2](https://img.youtube.com/vi/R3V_jT_HOXc/0.jpg)](https://youtu.be/R3V_jT_HOXc) 
 
+## Member Roles
+
+| 이름         | 담당                                         |
+| ------------ | :------------------------------------------- |
+| 조영진(팀장) | DDQN 알고리즘을 이용한 모델 학습 및 reward 구현 |
+| 구민상       | DQN알고리즘을 이용한 모델 학습 및 reward 구현 |
+| 고세람       | DQN알고리즘을 이용한 모델 학습 및 reward 구현 |
+| 임경묵       | Duel DQN 알고리즘을 이용한 모델 학습 및 reward 구현 |
+
 ## Goal
 ---
 <img src="./img/1.png" Width="320" Height="240"/> <img src="./img/2.png" Width="320" Height="240"/>  
