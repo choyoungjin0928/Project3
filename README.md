@@ -146,22 +146,18 @@ $ python viewer.py
 
 ## Try
 ---
-#### 1. hyper parameter 조정
-- 
-- 
-- 
-#### 2. Network 변경
+#### 1. Network 변경
 - DQN보다 DDQN이나 Duel DQN을 사용했을 때, 더 성능이 올라감 
 - DDQN이나 Duel DQN에서는 큰 성능 차이를 발견하지 못함  
 
-#### 3. epsilon 조정
+#### 2. epsilon 조정
 - episode 증가할 때마다 조금씩 감소
 - 고정값 사용
 
-#### 4. reward 변경
-- 
-- 
-- 
+#### 3. reward 변경
+- 기존의 전진, 좌회전, 우회전 총 3개의 action에서 전진, 좌회전, 우회전, 정지, 후진 총 5개의 action으로 부터 reward를 받는 것으로 수정하니 학습이 더 잘 되었음
+- 리워드 값은 최대한 간단명료하게 짜는 것이 학습효과가 좋았음
+- 벡터를 이용한 방법이 가장 효과가 좋았음.
 
 ## Limitations
 ---
